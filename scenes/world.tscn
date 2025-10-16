@@ -8,6 +8,7 @@
 [node name="World" type="Node2D"]
 
 [node name="Backgrounds" type="Node2D" parent="."]
+scale = Vector2(2.0197046, 2.0197046)
 
 [node name="Bg" type="Sprite2D" parent="Backgrounds"]
 modulate = Color(0.27058825, 0.83137256, 0.39215687, 1)
@@ -17,14 +18,27 @@ centered = false
 
 [node name="Pattern" type="Sprite2D" parent="Backgrounds"]
 modulate = Color(0.059565872, 0.553717, 0.23525918, 1)
-scale = Vector2(1.7771429, 1.7771429)
+position = Vector2(-60.404873, -45.056095)
+scale = Vector2(1.8195446, 1.8195446)
 texture = ExtResource("2_4wyf3")
 centered = false
 
 [node name="Lines" type="Sprite2D" parent="Backgrounds"]
-scale = Vector2(1.7888889, 1.7888889)
+position = Vector2(-60.404873, -45.05609)
+scale = Vector2(1.831571, 1.831571)
 texture = ExtResource("3_k0juu")
 centered = false
 
 [node name="Player" parent="." instance=ExtResource("4_k0juu")]
-position = Vector2(170, 127)
+position = Vector2(440, 340)
+scale = Vector2(1.3976091, 1.2827343)
+control_scheme = 1
+
+[node name="Player2" parent="." instance=ExtResource("4_k0juu")]
+position = Vector2(377, 620)
+scale = Vector2(1.3976091, 1.2827343)
+control_scheme = 2
+
+[node name="Player3" parent="." instance=ExtResource("4_k0juu")]
+position = Vector2(789, 401.00003)
+scale = Vector2(1.3976091, 1.2827343)
